@@ -1,7 +1,6 @@
 <?php 
 
 include('dataBase.php')
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -26,7 +25,6 @@ include('dataBase.php')
         </form>
     </div>
 <?php
-
     if(isset($_POST['subject'])) {
         $urlIndex =  $_POST['subject'];
 
@@ -56,7 +54,6 @@ include('dataBase.php')
             <div class="container mx-auto">
                 <div class="links">
 <?php
-
             if(!isset($repoData) && $repoData["count"] === NULL || $repoData["count"] == '') {
 ?>
                 <p class="text-red-500">

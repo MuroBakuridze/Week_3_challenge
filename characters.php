@@ -4,7 +4,6 @@ include('dataBase.php');
 $statement = $pdo->prepare('SELECT * FROM characters_data ORDER BY Id DESC');
 $statement->execute();
 $characters = $statement->fetchAll(PDO::FETCH_ASSOC);
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
