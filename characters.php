@@ -21,7 +21,7 @@ $characters = $statement->fetchAll(PDO::FETCH_ASSOC);
            <-- Back to Search Page
         </button>
     </a>
-    <div class="flex flex-row flex-wrap justify-between p-10 m-10">
+    <div class="flex flex-row flex-wrap justify-start p-10 m-10">
 <?php 
         foreach($characters as $data) {
 ?>

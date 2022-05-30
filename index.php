@@ -26,11 +26,11 @@ include('dataBase.php')
     </div>
 <?php
     if(isset($_POST['subject'])) {
-        $urlIndex =  str_replace(" ", "%20", $_POST['subject']);
+        $urlIndex =  str_replace(" ", "%20", trim($_POST['subject']));
  
         $statement = $pdo->prepare('SELECT * FROM characters_data WHERE name LIKE ?');
         $statement->execute([
-            "%".$urlIndex."%"
+            str_replace("%20", " ", trim("%".$urlIndex."%"))
         ]);
         $name = $statement->fetchAll(PDO::FETCH_ASSOC);
 
