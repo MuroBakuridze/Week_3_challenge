@@ -12,7 +12,7 @@ include('dataBase.php')
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="bg-fixed bg-no-repeat bg-cover" style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80')">
     <div class="h-48 w-full flex  items-center">
         <form class="h-48 w-full flex justify-center" name="form" action="" method="POST">
             <div class="flex  flex  items-center">
@@ -157,7 +157,7 @@ include('dataBase.php')
             </div>
             <div class="grid place-items-center m-10">
                 <a href="characters.php">
-                    <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">Check ALL Searched Characters</button>
+                    <button class="cursor-pointer pl-3 mt-5 flex justify-start text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Check ALL Searched Characters</button>
                 </a>
             </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
