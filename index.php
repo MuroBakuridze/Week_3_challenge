@@ -26,8 +26,8 @@ include('dataBase.php')
     </div>
 <?php
     if(isset($_POST['subject'])) {
-        $urlIndex =  $_POST['subject'];
-
+        $urlIndex =  str_replace(" ", "%20", $_POST['subject']);
+ 
         $statement = $pdo->prepare('SELECT * FROM characters_data WHERE name LIKE ?');
         $statement->execute([
             "%".$urlIndex."%"
@@ -59,7 +59,7 @@ include('dataBase.php')
                 <p class="text-red-500">
                     Can't find character with Name: 
                     <span class="font-bold text-stone-700">
-                        <?= $urlIndex ?>
+                        <?= str_replace("%20", " ", $urlIndex) ?>
                     </span>
                 </p>
 <?php
